@@ -96,8 +96,7 @@ This project illustrates key concepts:
 
 ---
 
-## 📄 License
-
-MIT © [Your Name]
+## License
+[MIT](LICENSE)
 
 ---
