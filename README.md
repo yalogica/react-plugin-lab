@@ -1,17 +1,16 @@
-# 🧩 React Plugin Lab
+# React Plugin Lab
 
 A minimal, educational React application demonstrating a **plugin-based architecture** using TypeScript, React Context, and dynamic imports.
 Perfect for learning how to build extensible frontend applications where features can be added or removed as independent plugins.
 
-## 🌟 Features
+## Features
 
-- ✅ **Plugin contract**: Each plugin is a self-contained React component with optional metadata.
-- ✅ **Dynamic loading**: Plugins are loaded asynchronously at runtime using `import()`.
-- ✅ **Context-based registry**: Plugins are shared across the app via React Context.
-- ✅ **Type-safe**: Full TypeScript support with clear interfaces.
-- ✅ **Zero build-time coupling**: Core app doesn’t need to know about plugins in advance.
+- **Plugin contract**: Each plugin is a self-contained React component with optional metadata.
+- **Dynamic loading**: Plugins are loaded asynchronously at runtime using `import()`.
+- **Context-based registry**: Plugins are shared across the app via React Context.
+- **Type-safe**: Full TypeScript support with clear interfaces.
+- **Zero build-time coupling**: Core app doesn’t need to know about plugins in advance.
 
----
 ## 📁 Project Structure
 
 ```
@@ -26,8 +25,7 @@ src/
 └── main.tsx               # App entry point
 ```
 
----
-## 🚀 Getting Started
+## Getting Started
 
 ### Installation
 
@@ -53,9 +51,8 @@ npm run build
 
 Outputs production-ready files to the `dist/` folder.
 
----
 
-## 🧪 How It Works
+## How It Works
 
 1. **Define a plugin** as a default-exported React component with optional `meta`:
 
@@ -73,20 +70,15 @@ Outputs production-ready files to the `dist/` folder.
 
 4. Plugins are **rendered automatically** in `App.tsx` using the `usePlugins()` hook.
 
----
 
-## 🛠️ Adding a New Plugin
+## Adding a New Plugin
 
 1. Create a new file in `src/plugins/`, e.g., `WeatherPlugin.tsx`.
 2. Export a default React component and (optionally) a `meta` object.
 3. Add its path to the `pluginPaths` array in `src/pluginLoader.ts`.
 4. That’s it! The plugin will appear on the dashboard.
 
-> 💡 No recompilation of the core app is needed — just refresh the browser!
-
----
-
-## 📚 Learning Goals
+## Learning Goals
 
 This project illustrates key concepts:
 - Dynamic imports (`import()`)
@@ -94,9 +86,5 @@ This project illustrates key concepts:
 - TypeScript interfaces for contracts
 - Decoupled, modular frontend architecture
 
----
-
 ## License
 [MIT](LICENSE)
-
----
